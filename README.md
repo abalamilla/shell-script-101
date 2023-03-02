@@ -35,9 +35,10 @@ Commonly, the script file extension is `.sh` but it can be any extension or even
 
 ```bash
 #!interpreter [optional-args]
-# Shebang 👆
+# Shebang 👆  <- This is a comment
+# This is a comment
 
-# Commands 👇
+# Commands 👇   <- This is also a comment
 echo "Hello, World!"
 
 # functions
