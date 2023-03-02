@@ -140,9 +140,34 @@ We can also set mode with an octal value. The octal values have the following me
 To set mode flags we will use `chmod` (change mode) command, which receives the class, operator and flags as letters or only octal modes.
 
 ```shell
+# set write flag to the group
 chmod g+w script.sh
+
+# set read flag to the world
 chmod o-r script.sh
+
+# set full control to the owner, read and execute flags to the group
 chmod 750 script.sh
 ```
+
+## First script
+
+Let's write our first script, as always we'll start with `Hello, Wordl!`
+
+[first.sh](src/first.sh)
+```bash
+#!/bin/bash
+
+echo "Hello, World!"
+```
+
+### Tasks
+
+1. Run the script `./src/first.sh`
+2. Review output error message
+3. Review file permissions `ls -la src`
+4. Change permissions `chmod u+x src/first.sh`
+5. Run again
+6. Eureka! 🙌🏽
 
 
